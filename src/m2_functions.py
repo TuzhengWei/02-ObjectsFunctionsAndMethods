@@ -3,12 +3,12 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Tuzheng Wei.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -35,7 +35,8 @@ def main():
     turtle3()
     turtle2()
     turtle2()
-
+    turtle4()
+    turtle5()
     window.close_on_mouse_click()
 
 
@@ -104,9 +105,27 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+    Henry = rg.SimpleTurtle()
+    Henry.speed=5
+    Henry.pen = rg.Pen('purple',20)
+
+    Henry.left(20)
+    Henry.right(30)
+
+    Henry.draw_regular_polygon(10,10)
+
+
+def turtle5():
+    dog = rg.SimpleTurtle()
+    dog.speed=10
+    dog.pen = rg.Pen('pink',10)
+
+    dog.draw_circle(50)
+    dog.draw_square(10)
 ###############################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
@@ -138,7 +157,7 @@ def turtle3():
 
 ###############################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -168,29 +187,29 @@ def turtle3():
 
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
 #     -- then YOUR SimpleTurtle should move,
 #     -- then the other 3 SimpleTurtles should move.
 #
-#   Run this module.  Check that there is another SimpleTurtle (yours)
-#   that uses the pen you chose and moves around a bit.
-#   If your code has errors (shows RED in the Console window)
+#   Run this module.  Check that there ies around a bit.
+#   If your code has errors (shows REs another SimpleTurtle (yours)
+#   that uses the pen you chose and movD in the Console window)
 #   or does not do what it should, get help as needed to fix it.
 #
 ###############################################################################
 
 ###############################################################################
 #
-# TODO: 6.
+# DONE: 6.
 #   The previous two TODOs IMPLEMENTED a function (TO-DO 4)
 #   and TESTED that function (TO-DO 5).
 #
 #   Now implement AND test one more function, defining it immediately
 #   below the definition of your   turtle4   function.
-#   Name your new function   turtle5.
+#   Name your newfunction    turtle5.
 #
 #   The Python "pep8" coding standard says to leave exactly 2 blank
 #   lines between function definitions, so be sure to do so.
