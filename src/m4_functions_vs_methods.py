@@ -4,15 +4,15 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
   -- how they differ.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Tuzheng Wei.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
-###############################################################################
+#################
+# DONE: 2.##############################################################
 #
-# TODO: 2.
-#   READ this comment, ASKING QUESTIONS as needed to understand it.
+#   READ this com, ASKING QUESTIONS as  neededto understand it.
 #
-# Part 1:  CONSTRUCTING objects, applying ** METHODS ** to them:
+# Part 1:  CONSTRUCTImentNG objects, applying ** METHODS ** to them:
 #
 #   For objects that are CONSTRUCTED, we use the DOT notation
 #   to ask them to do things or to change their characteristics.
@@ -23,7 +23,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #
 #   In the above example:
 #
-#      pen      is an   INSTANCE VARIABLE   (aka DATA ATTRIBUTE, FIELD)
+#      pen      is an   INSTANCVARIABLEE    (aka DATA ATTRIBUTE, FIELD)
 #                 of SimpleTurtles.  It is a CHARACTERISTIC of
 #                 SimpleTurtles. Each SimpleTurtle has its own VALUE
 #                 of that characteristic.
@@ -51,7 +51,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #            ...
 #
 #   We   ** call **   FUNCTIONS (that is, we make them run)
-#   in a way that is similar to how we call METHODS,
+#   in a way tha tis similar to how we call METHODS,
 #   but WITHOUT the DOT notation.  For example
 #      def main():
 #          turtle3()
@@ -82,6 +82,9 @@ def main():
     draw_many_squares(turtle, 3, 75, 15)
 
     turtle3()
+    try_methods()
+    try_functions()
+    try_methods_and_functions()
 
     ###########################################################################
     # When the TODOs ask you to test YOUR code, put YOUR tests below this:
@@ -181,10 +184,16 @@ def try_methods():
       -- backward  100 units
     """
     ###########################################################################
-    # TODO: 3. Implement and this function, per its doc-string above.
+    # DONE: 3. Implement and this function, per its doc-string above.
     #     (To test it, put a statement in   main   that calls this function.)
     ###########################################################################
+    henry = rg.SimpleTurtle()
+    henry.pen = rg.Pen('brown',5)
 
+    henry.forward(150)
+    henry.left(90)
+    henry.forward(50)
+    henry.backward(100)
 
 def try_functions():
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
@@ -205,6 +214,9 @@ def try_functions():
     #
     ###########################################################################
 
+    jump_and_move_turtle(200,100,300,30)
+    jump_and_move_turtle(100,200,0,0)
+    jump_and_move_turtle(-50,50,100,100)
 
 def try_methods_and_functions():
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
@@ -240,7 +252,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ###########################################################################
-    # TODO: 5. Implement and test this function, per its doc-string above.
+    # DONE: 5. Implement and test this function, per its doc-string above.
     #    (To test it, put a statement in   main   that calls this function.)
     #
     #   NOTE: This function should ** CALL ** the
@@ -249,6 +261,34 @@ def try_methods_and_functions():
     #
     ###########################################################################
 
+    henry = rg.SimpleTurtle()
+    henry.pen = rg.Pen('blue',5)
+    henry.speed= 1
+
+    henry.right(30)
+    henry.draw_square(100)
+    henry.right(30)
+    henry.draw_square(100)
+
+    henry.speed = 5
+    henry.pen = rg.Pen('red',5)
+
+    for k in range(10):
+        henry.draw_square(50)
+        henry.rigiht(15)
+
+        henry.speed = 100
+        henry.pen = rg.Pen('red',35)
+
+        for x in range(8):
+            henry.draw_square(300)
+            henry.right(60)
+
+    henry.pen = rg.Pen('black',3)
+
+    henry.backward(200)
+    henry.draw_circle(30)
+    henry.draw_square(50)
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.

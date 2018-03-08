@@ -5,8 +5,8 @@ This module uses ROSEGRAPHICS to demonstrate:
   -- accessing their DATA via INSTANCE VARIABLES.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Tuzheng Wei.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
 #
@@ -33,8 +33,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #          ask PyCharm will help you figure out the answer to this question.
 #          Hint: After you type the   (   in the line of code,
 #          if you wait a moment PyCharm will add the   )   and has a popup.
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
-#
+#            WRITE_YOUR0
 #     d. Write a line of code that constructs a RoseWindow object whose
 #        height is 100 with any width you choose.
 #           Again try to use PyCharm's hints to help you figure this out.
